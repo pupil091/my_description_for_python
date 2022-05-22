@@ -16,3 +16,5 @@ class TrainingNext(Training):
 
 box = TrainingNext()
 box.owner_4()
+*names, = 1, 2, 3, 4, 5, 2, 35, 213
+print(names)
