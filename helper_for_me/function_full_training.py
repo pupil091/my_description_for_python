@@ -32,12 +32,6 @@ print(triangle_side.is_triangle())
 #     return 'Нужно вводить только числа!'
 #
 
-# x = TriangleChecker()
-# x.is_triangle(1, 2, 4)
-#
-# b = TriangleChecker()
-# b.sides(1, 2, 4)
-
 # a = int(input("Введите длину первого отрезка: "))
 # b = int(input("Введите длину первого отрезка: "))
 # c = int(input("Введите длину первого отрезка: "))
