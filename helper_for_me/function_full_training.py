@@ -16,10 +16,30 @@
 # x.show_my_drink()
 
 
-triangle_side = TriangleChecker(1, 2, 4)
-print(triangle_side.is_triangle())
-# triangle1 = TriangleChecker([-2, 3, 4])
-# print(triangle1.is_triangle())
+class TriangleChecker:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def is_triangle(self):
+        list_item = [self.a, self.b, self.c]
+        for item in list_item:
+            if item == str:
+                print("Нужно вводить только числа!")
+                break
+            if item < 0:
+                print("С отрицательными числами ничего не выйдет!")
+            elif self.a >= self.b + self.c and self.b >= self.a + self.c and self.c >= self.a + self.b:
+                print("Жаль, но из этого треугольник не сделать")
+            elif self.a + self.b > self.c and self.a + self.c > self.b and self.b + self.c > self.a:
+                print("Ура, можно построить треугольник!")
+
+
+# triangle_side = TriangleChecker(1, 99, 415345)
+# print(triangle_side.is_triangle())
+triangle1 = TriangleChecker(1, 78, 78)
+print(triangle1.is_triangle())
 
 # def is_triangle(self):
 #     if all(isinstance(side, (int, float)) for side in self.sides):
@@ -31,6 +51,12 @@ print(triangle_side.is_triangle())
 #         return 'С отрицательными числами ничего не выйдет!'
 #     return 'Нужно вводить только числа!'
 #
+
+# x = TriangleChecker()
+# x.is_triangle(1, 2, 4)
+#
+# b = TriangleChecker()
+# b.sides(1, 2, 4)
 
 # a = int(input("Введите длину первого отрезка: "))
 # b = int(input("Введите длину первого отрезка: "))
